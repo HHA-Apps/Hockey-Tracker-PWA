@@ -32,7 +32,8 @@
     var f = document.createElement('iframe');
     f.src = APP_URL;
     f.title = 'Hutch Hockey Off-Ice';
-    f.allow = 'clipboard-write';
+    f.allow = 'clipboard-write; fullscreen; picture-in-picture';
+    f.allowFullscreen = true;
     document.body.appendChild(f);
   } else {
     document.body.innerHTML = '<div class="setup"><b>Almost there.</b><br>Open index.html and paste your Apps Script web app URL (the one ending in /exec) into the APP_URL line near the top.</div>';
